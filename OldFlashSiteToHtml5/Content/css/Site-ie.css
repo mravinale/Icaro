@@ -1,0 +1,278 @@
+﻿section, header, footer, aside, nav, article
+{
+    display: block;
+    font-family: Helvetica53; 
+}
+
+
+@font-face {
+	font-family: 'Opticon';
+	src: url('Opticon.eot');
+	src: local('Opticon'), url('Opticon.woff') format('woff'), url('Opticon.ttf') format('truetype'), url('Opticon.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Helvetica53-Extended';
+	src: url('Helvetica53-Extended.eot');
+	src: local('Helvetica53-Extended'), url('Helvetica53-Extended.woff') format('woff'), url('Helvetica53-Extended.ttf') format('truetype'), url('Helvetica53-Extended.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+#ex_header, #ex_navbar, #ex_middle, #ex_footer
+{
+    margin: 0 auto;
+    width: 1024px;
+    clear: both;
+    background-color: #ddd;
+}
+
+#navigation 
+{
+    margin-top: 20px;
+}
+#ex_header h1
+{
+    margin: 0 0 0 10px;
+}
+
+#ex_footer h6
+{
+    margin: 0 0 0 10px;
+}
+
+#ex_footer .text
+{
+   font-family: Helvetica53-Extended;
+	font-size: 13pt;	
+    line-height: 40px;  
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    height: 45px; 
+    width: 100%;
+    background-color: #ffffff;
+   
+}
+
+#ex_footer .text a
+{
+    text-decoration: none;
+    color: #000000;
+   /*  text-shadow: 1px 1px 2px #bcbcbc;*/
+}
+
+
+ #ex_footer .text a:hover
+{
+    color: #dcdcd7;
+}
+
+#ex_footer
+{
+    border-style: solid solid none solid;
+	border-width: 1px;
+	border-color: #DDDDDD;
+    height: 46px;
+}
+
+
+#ex_navbar ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: block;
+    background-color: #000;
+    float: left;
+}
+
+#ex_navbar ul li
+{
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0 10px;
+}
+
+#ex_navbar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+#ex_navbar ul li a:hover
+{
+    color: #ffc;
+}
+
+#ex_middle
+{
+    background-color: #ccc;
+    border-style: solid solid none solid;
+	border-width: 1px;
+	border-color: #DDDDDD;
+
+}
+
+#ex_sidebar
+{
+    float: left;
+    width: 369px;
+    height: 582px;
+    background-color: #000000;
+}
+
+#ex_sidebar h2
+{
+    margin: 0 0 0 10px;
+}
+
+#ex_main
+{
+    float: left;
+    width: 655px;
+    height: 582px;
+    background-color: #eee;
+    background: url('../Images/HOME.JPG') no-repeat left;
+}
+
+#ex_header
+{
+	border-style: solid solid none solid;
+	border-width: 1px;
+	border-color: #DDDDDD;
+	height: 185px;
+	background-color: #ffffff;
+	
+}
+
+#header_box
+{
+	background: url('../Images/Logo.png') no-repeat left;
+	/*margin:0 auto 10px;*/
+}
+
+#header_box_right
+{
+	background: url('../Images/CartaAUstedes.png') no-repeat left;
+	float: right; 
+	width: 214px;
+	height: 70px; 
+	margin: 110px 0px 0px 0px; 
+}
+
+
+.text_menu_head
+{
+	font-family: Opticon, sans-serif; 
+	font-size: 22pt;	
+	border: medium none;
+	font-weight:Bolder;
+    color: #FFFFFF;
+    line-height: 50px;  
+    /*text-shadow: 1px 1px 2px #111111;*/
+    text-decoration: none;
+}
+    
+.text_menu
+{
+	font-family: Helvetica53-Extended, sans-serif;
+	font-size: 16pt;	
+    line-height: 30px;  
+	font-weight:lighter;
+    color: #FFFFFF; 
+    /*text-shadow: 1px 1px 2px #111111;*/
+    position: relative; 
+    left: -40px;
+    text-decoration: none;
+ 
+}
+
+.text_menu_last
+{
+	font-family: Helvetica53-Extended, sans-serif;
+	font-size: 16pt;	
+    line-height: 30px;  
+	font-weight:lighter;
+    color: #FFFFFF; 
+    /*text-shadow: 1px 1px 2px #111111;*/
+    margin-left: -40px;
+    text-decoration: none;
+
+}
+
+
+#flipbox 
+{
+    background: url('../Images/backGroundTip.png') no-repeat left;
+   font-family: Helvetica53-Extended, sans-serif;
+   font-size: 16pt;	
+    height: 143px;
+    margin-top: 425px;
+    text-align: center;
+    width: 369px;
+    position: absolute;   
+    margin-left: -1024px
+}
+
+#flipbox .text 
+{
+   font-family: Helvetica53-Extended, sans-serif;
+    font-size: 11pt;
+    padding-left: 40px;
+    text-align: left;
+  /*  text-shadow: 2px 2px 2px #B0B0B0 ;*/
+    padding-top: 10px;
+}
+
+#flipbox .textmini
+{
+    font-family: Helvetica53-Extended, sans-serif;
+    font-size: 9pt;
+    padding-left: 40px;
+    text-align: left;
+   /* text-shadow: 2px 2px 2px #B0B0B0 ;*/
+    padding-top: 10px;
+}
+
+
+#flipbox .header 
+{
+    font-family: Helvetica53-Extended, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    padding-left: 40px;
+    text-align: left;
+   /* text-shadow: 2px 2px 2px #B0B0B0 ;*/
+     padding-top: 10px;
+}
+
+/*===================*/
+/*=== Nivo Styles ===*/
+/*===================*/
+.theme-default .slider {
+    height: 582px; 
+    width: 655px;
+    
+}
+/*
+.theme-default .nivo-controlNav a {
+	background:url(nivo-slider-theme/bullets.png) no-repeat;
+}
+*/
+    
+a:hover, a:active {
+	color: #DDDDDD;
+	text-decoration: none;
+}
+
+
+.clear{
+    clear: both;
+}

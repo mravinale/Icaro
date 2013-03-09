@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0594CB0-5905-41D0-BEC1-4FDD15D69673}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OldFlashSiteToHtml5</RootNamespace>
+    <AssemblyName>OldFlashSiteToHtml5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\Helvetica53-Extended.svg" />
+    <Content Include="Content\css\nivo-slider-theme\arrows.png" />
+    <Content Include="Content\css\nivo-slider-theme\bullets.png" />
+    <Content Include="Content\css\nivo-slider-theme\default.css" />
+    <Content Include="Content\css\nivo-slider-theme\loading.gif" />
+    <Content Include="Content\css\nivo-slider.css" />
+    <Content Include="Content\css\Opticon.svg" />
+    <Content Include="Content\css\Site-ie.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\flipbox\15años.html" />
+    <Content Include="Content\flipbox\Aniversarios.html" />
+    <Content Include="Content\flipbox\BabyShower.html" />
+    <Content Include="Content\flipbox\Casamientos.html" />
+    <Content Include="Content\flipbox\Cumpleaños.html" />
+    <Content Include="Content\flipbox\Despedidas.html" />
+    <Content Include="Content\flipbox\Inauguraciones.html" />
+    <Content Include="Content\flipbox\Mitzva.html" />
+    <Content Include="Content\flipbox\Productos.html" />
+    <Content Include="Content\flipbox\Servicios.html" />
+    <Content Include="Content\images\backGroundTip.png" />
+    <Content Include="Content\images\CartaAUstedes.png" />
+    <Content Include="Content\images\emailPoint.png" />
+    <Content Include="Content\images\facebookIcon.jpg" />
+    <Content Include="Content\images\HOME.JPG" />
+    <Content Include="Content\images\Inicio.png" />
+    <Content Include="Content\images\Letter.jpg" />
+    <Content Include="Content\images\Logo.jpg" />
+    <Content Include="Content\images\Logo.png" />
+    <Content Include="Content\images\Slider\EventosCorporativos\Aniversario\100_4963.JPG" />
+    <Content Include="Content\images\Slider\EventosCorporativos\Aniversario\100_5213.JPG" />
+    <Content Include="Content\images\Slider\EventosCorporativos\Aniversario\IMG_0170.JPG" />
+    <Content Include="Content\images\Slider\EventosCorporativos\Despedida\100_5727.JPG" />
+    <Content Include="Content\images\Slider\EventosCorporativos\Despedida\100_5744.JPG" />
+    <Content Include="Content\images\Slider\EventosCorporativos\Despedida\despedida.JPG" />
+    <Content Include="Content\images\Slider\EventosCorporativos\Inauguracion\100_5028.JPG" />
+    <Content Include="Content\images\Slider\EventosCorporativos\Inauguracion\100_5068.JPG" />
+    <Content Include="Content\images\Slider\EventosCorporativos\Inauguracion\100_5600.JPG" />
+    <Content Include="Content\images\Slider\EventosInfantiles\BabyShower\100_5142.JPG" />
+    <Content Include="Content\images\Slider\EventosInfantiles\BabyShower\100_5270.JPG" />
+    <Content Include="Content\images\Slider\EventosInfantiles\BabyShower\100_5291.JPG" />
+    <Content Include="Content\images\Slider\EventosInfantiles\Cumpleaños\100_5083.JPG" />
+    <Content Include="Content\images\Slider\EventosInfantiles\Cumpleaños\100_5854.JPG" />
+    <Content Include="Content\images\Slider\EventosInfantiles\Cumpleaños\100_5949.JPG" />
+    <Content Include="Content\images\Slider\EventosSociales\15años\100_5368.JPG" />
+    <Content Include="Content\images\Slider\EventosSociales\15años\100_5505.JPG" />
+    <Content Include="Content\images\Slider\EventosSociales\15años\100_5901.JPG" />
+    <Content Include="Content\images\Slider\EventosSociales\Casamiento\100_4812.jpg" />
+    <Content Include="Content\images\Slider\EventosSociales\Casamiento\100_4839.JPG" />
+    <Content Include="Content\images\Slider\EventosSociales\Casamiento\100_5429.JPG" />
+    <Content Include="Content\images\Slider\EventosSociales\Mitzva\100_4853.JPG" />
+    <Content Include="Content\images\Slider\EventosSociales\Mitzva\100_5802.JPG" />
+    <Content Include="Content\images\Slider\EventosSociales\Mitzva\100_5830.JPG" />
+    <Content Include="Content\Music\avril_lavigne.mp3" />
+    <Content Include="Content\Music\david_guetta.mp3" />
+    <Content Include="Content\Music\dj_tiesto.mp3" />
+    <Content Include="Content\Music\hoobastank.mp3" />
+    <Content Include="Content\Music\Jplayer.swf" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\chili-1.7.pack.js" />
+    <Content Include="Scripts\Index.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.min.js" />
+    <Content Include="Scripts\jquery.accordion.js" />
+    <Content Include="Scripts\jquery.dimensions.js" />
+    <Content Include="Scripts\jquery.easing.js" />
+    <Content Include="Scripts\jquery.flip.js" />
+    <Content Include="Scripts\jquery.jplayer.min.js" />
+    <Content Include="Scripts\jquery.nivo.slider.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\Helvetica53-Extended.eot" />
+    <Content Include="Content\css\Helvetica53-Extended.otf" />
+    <Content Include="Content\css\Helvetica53-Extended.ttf" />
+    <Content Include="Content\css\Helvetica53-Extended.woff" />
+    <Content Include="Content\css\Opticon.eot" />
+    <Content Include="Content\css\Opticon.otf" />
+    <Content Include="Content\css\Opticon.ttf" />
+    <Content Include="Content\css\Opticon.woff" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20923/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
