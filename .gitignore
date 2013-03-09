@@ -1,1 +1,5 @@
 /_ReSharper.OldFlashSiteToHtml5
+/OldFlashSiteToHtml5/bin
+/OldFlashSiteToHtml5/obj
+/OldFlashSiteToHtml5/*.user
+/*.suo
