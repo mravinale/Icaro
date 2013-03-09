@@ -111,11 +111,11 @@
     <Content Include="Content\css\Opticon.svg" />
     <Content Include="Content\css\Site-ie.css" />
     <Content Include="Content\css\Site.css" />
-    <Content Include="Content\flipbox\15años.html" />
+    <Content Include="Content\flipbox\15anios.html" />
     <Content Include="Content\flipbox\Aniversarios.html" />
     <Content Include="Content\flipbox\BabyShower.html" />
     <Content Include="Content\flipbox\Casamientos.html" />
-    <Content Include="Content\flipbox\Cumpleaños.html" />
+    <Content Include="Content\flipbox\Cumpleanios.html" />
     <Content Include="Content\flipbox\Despedidas.html" />
     <Content Include="Content\flipbox\Inauguraciones.html" />
     <Content Include="Content\flipbox\Mitzva.html" />

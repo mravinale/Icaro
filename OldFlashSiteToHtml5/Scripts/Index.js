@@ -134,12 +134,12 @@ jQuery().ready(function () {
 
         if ($.browser.msie && $.browser.version < "9.0") {
             $('#flipbox .flipContent').remove();
-            $('#flipbox').load("/Content/flipbox/15años.html");
+            $('#flipbox').load("/Content/flipbox/15anios.html");
         }
         else {
             $("#flipbox").flip({
                 direction: 'rl',
-                content: $("<div>").load("/Content/flipbox/15años.html")
+                content: $("<div>").load("/Content/flipbox/15anios.html")
             });
         }
 
@@ -195,12 +195,12 @@ jQuery().ready(function () {
         $('#flipbox').show();
         if ($.browser.msie && $.browser.version < "9.0") {
             $('#flipbox .flipContent').remove();
-            $('#flipbox').load("/Content/flipbox/Cumpleaños.html");
+            $('#flipbox').load("/Content/flipbox/Cumpleanios.html");
         }
         else {
             $("#flipbox").flip({
                 direction: 'rl',
-                content: $("<div>").load("/Content/flipbox/Cumpleaños.html")
+                content: $("<div>").load("/Content/flipbox/Cumpleanios.html")
             });
         }
     });
