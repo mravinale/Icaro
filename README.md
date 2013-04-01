@@ -1,4 +1,4 @@
-# An old flash site converted into Html5
+# A flash site converted into SPA Html5
 
-This is a early attempt to create a html5 site similar to a old fashion flash lander page for a friend, using carrousel, some animations and music.
-[take a look](http://virginiaeventos.apphb.com/)
+This is a migraton from a old fashion flash lander page to a SPA html5 for a friend, using carrousel, some animations and music.
+[take a look](http://Icaro.apphb.com/)
