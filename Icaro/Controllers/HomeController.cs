@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace OldFlashSiteToHtml5.Controllers
+namespace Icaro.Controllers
 {
 	public class HomeController : Controller
 	{
